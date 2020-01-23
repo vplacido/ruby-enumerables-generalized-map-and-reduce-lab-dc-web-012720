@@ -10,5 +10,8 @@ end
 def reduce(source, startingPoint=0)
   if startingPoint
     total = startingPoint
-    
+  else 
+    total = 0 
+  end 
+  source.each do |item|
   
