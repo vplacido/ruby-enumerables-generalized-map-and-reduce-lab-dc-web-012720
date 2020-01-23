@@ -14,7 +14,7 @@ def reduce(source, startingPoint=0)
     total = 0 
   end 
   source.each do |item|
-    total += yield(total, item)
+    total = yield(total, item)
   end
   total
 end
