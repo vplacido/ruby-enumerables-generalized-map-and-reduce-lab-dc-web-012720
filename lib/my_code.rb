@@ -2,5 +2,5 @@
 def map(source, block)
   newArr = []
   source.each do |item|
-    newArr << 
+    newArr << yield(item)
 end
