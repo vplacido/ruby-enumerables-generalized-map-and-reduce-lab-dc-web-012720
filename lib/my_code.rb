@@ -7,11 +7,11 @@ def map(source)
   newArr
 end
 
-def reduce(source, startingPoint=0)
+def reduce(source, startingPoint=nil)
   if startingPoint
     total = startingPoint
   else 
-    total = 0
+    total = source[0]
   end 
   source.each do |item|
     total = yield(total, item)
