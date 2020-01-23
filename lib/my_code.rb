@@ -7,7 +7,7 @@ def map(source)
   newArr
 end
 
-def reduce(source, startingPoint=nil)
+def reduce(source, startingPoint=0)
   if startingPoint
     total = startingPoint
   else 
