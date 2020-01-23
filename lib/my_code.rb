@@ -6,3 +6,7 @@ def map(source)
   end 
   newArr
 end
+
+def reduce(source)
+  value = 0 
+  
