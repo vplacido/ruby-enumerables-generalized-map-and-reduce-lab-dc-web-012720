@@ -8,5 +8,6 @@ def map(source)
 end
 
 def reduce(source, startingPoint=0)
-  value = 0 
+  if startingPoint
+    
   
