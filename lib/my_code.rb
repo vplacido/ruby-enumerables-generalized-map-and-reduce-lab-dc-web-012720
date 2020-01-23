@@ -12,6 +12,7 @@ def reduce(source, startingPoint=nil)
     total = startingPoint
   else 
     total = source[0]
+    source.shift()
   end 
   source.each do |item|
     total = yield(total, item)
